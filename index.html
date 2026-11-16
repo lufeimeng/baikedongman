@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成人漫画小百科 | 星图·墨鱼·青柠·拾页·白夜·横竖 可爱整理 · 成人百科</title>
+  <meta name="description" content="把 6 个成人漫画品牌收成一页小卡片：星图、墨鱼、青柠、拾页、白夜、横竖。编号、平台类型都在，点一点就能去官网词条。">
+  <meta name="keywords" content="成人漫画,星图漫画,墨鱼漫画,青柠漫画,拾页漫画,白夜漫画,横竖漫画,成人百科">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="成人百科">
+  <link rel="canonical" href="https://chengrenbaike.com/manhua/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="成人漫画小百科 | 6 个品牌可爱整理">
+  <meta property="og:description" content="星图、墨鱼、青柠、拾页、白夜、横竖——一页小卡片看完。">
+  <meta property="og:url" content="https://chengrenbaike.com/manhua/">
+  <meta property="og:site_name" content="成人百科">
+  <meta property="og:locale" content="zh_CN">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "成人漫画小百科",
+    "url": "https://chengrenbaike.com/manhua/",
+    "description": "成人百科整理的成人漫画平台品牌资料（可爱卡片版）。",
+    "isPartOf": { "@type": "WebSite", "name": "成人百科", "url": "https://chengrenbaike.com/" },
+    "inLanguage": "zh-CN"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #fff5f7;
+      --bg-2: #ffe8ef;
+      --card: #ffffff;
+      --ink: #4a3540;
+      --muted: #9a7a88;
+      --pink: #ff8fab;
+      --pink-deep: #f472b6;
+      --lavender: #c4b5fd;
+      --mint: #6ee7b7;
+      --peach: #fdba74;
+      --sky: #7dd3fc;
+      --border: #f5d0d8;
+      --shadow: 0 8px 24px rgba(244, 114, 182, 0.12);
+      --radius: 22px;
+      --font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      min-height: 100vh;
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(255, 143, 171, 0.18), transparent 28%),
+        radial-gradient(circle at 88% 12%, rgba(196, 181, 253, 0.2), transparent 26%),
+        radial-gradient(circle at 70% 78%, rgba(110, 231, 183, 0.12), transparent 30%);
+    }
+    a { color: var(--pink-deep); text-decoration: none; }
+    a:hover { color: #db2777; }
+    .wrap { width: 100%; max-width: 880px; margin: 0 auto; padding: 0 18px; }
+
+    /* Soft top bar */
+    .top {
+      padding: 16px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .brand .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pink), var(--lavender));
+    }
+    .top-btn {
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: var(--pink);
+      color: #fff;
+      border: none;
+      box-shadow: 0 4px 14px rgba(255, 143, 171, 0.4);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .top-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255, 143, 171, 0.5);
+      color: #fff;
+    }
+
+    /* Cute hero */
+    .hero {
+      text-align: center;
+      padding: 28px 0 36px;
+    }
+    .bubble {
+      display: inline-block;
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: 18px 18px 18px 6px;
+      padding: 8px 14px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+    }
+    .bubble span { color: var(--pink-deep); font-weight: 700; }
+    .hero h1 {
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      font-weight: 900;
+      line-height: 1.3;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .hero h1 .hl {
+      background: linear-gradient(90deg, var(--pink-deep), var(--lavender));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 420px;
+      margin: 0 auto 20px;
+    }
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+    .pill {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--card);
+      border: 1.5px solid var(--border);
+      color: var(--ink);
+    }
+    .pill.pink { background: #ffe4ec; border-color: #ffc1d4; color: #be185d; }
+    .pill.lav { background: #ede9fe; border-color: #ddd6fe; color: #6d28d9; }
+    .pill.mint { background: #d1fae5; border-color: #a7f3d0; color: #047857; }
+
+    /* Sticker board */
+    .board {
+      padding: 8px 0 40px;
+    }
+    .board-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .board-title::before {
+      content: "♡";
+      color: var(--pink);
+      font-size: 1rem;
+    }
+    .board-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .stickers {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .sticker {
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 2.5px solid var(--border);
+      padding: 18px 16px 16px;
+      box-shadow: var(--shadow);
+      position: relative;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .sticker:hover {
+      transform: rotate(-1deg) scale(1.02);
+      box-shadow: 0 12px 32px rgba(244, 114, 182, 0.18);
+    }
+    .sticker:nth-child(even):hover { transform: rotate(1deg) scale(1.02); }
+    .sticker .tape {
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-2deg);
+      width: 48px;
+      height: 14px;
+      background: rgba(253, 186, 116, 0.55);
+      border-radius: 2px;
+    }
+    .sticker:nth-child(2) .tape { background: rgba(196, 181, 253, 0.55); transform: translateX(-50%) rotate(2deg); }
+    .sticker:nth-child(3) .tape { background: rgba(110, 231, 183, 0.5); }
+    .sticker:nth-child(4) .tape { background: rgba(125, 211, 252, 0.55); transform: translateX(-50%) rotate(1deg); }
+    .sticker:nth-child(5) .tape { background: rgba(255, 143, 171, 0.5); }
+    .sticker:nth-child(6) .tape { background: rgba(253, 186, 116, 0.5); transform: translateX(-50%) rotate(-3deg); }
+    .sticker .emoji {
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+    .sticker .name {
+      font-weight: 800;
+      font-size: 1.08rem;
+      color: var(--ink);
+    }
+    .sticker:hover .name { color: var(--pink-deep); }
+    .sticker .code {
+      font-size: 0.72rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: var(--muted);
+      background: var(--bg-2);
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 6px;
+      align-self: flex-start;
+    }
+    .sticker .desc {
+      font-size: 0.84rem;
+      color: var(--muted);
+      flex: 1;
+    }
+    .sticker .go {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--pink-deep);
+      margin-top: 4px;
+    }
+
+    /* Soft tip box */
+    .tip {
+      background: linear-gradient(135deg, #fff0f5, #f5f3ff);
+      border: 2px dashed #f9a8d4;
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .tip p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 480px;
+    }
+    .tip strong { color: var(--ink); }
+    .tip a.mini {
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #fff;
+      border: 2px solid var(--border);
+      color: var(--pink-deep);
+    }
+    .tip a.mini:hover { border-color: var(--pink); background: #fff5f7; }
+
+    /* Bottom CTA */
+    .cta {
+      text-align: center;
+      padding: 28px 0 40px;
+    }
+    .cta h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .cta p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .cta-row a.main {
+      font-weight: 700;
+      padding: 12px 22px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--pink), var(--pink-deep));
+      color: #fff;
+      box-shadow: 0 6px 20px rgba(244, 114, 182, 0.35);
+    }
+    .cta-row a.main:hover { color: #fff; transform: translateY(-1px); }
+    .cta-row a.sub {
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: #fff;
+      border: 2px solid var(--border);
+      color: var(--ink);
+    }
+    .cta-row a.sub:hover { border-color: var(--pink); color: var(--pink-deep); }
+
+    footer {
+      border-top: 2px solid var(--border);
+      padding: 18px 0 24px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    footer a { color: var(--muted); }
+    footer a:hover { color: var(--pink-deep); }
+    .foot-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin: 8px 0 10px;
+    }
+    .disclaimer {
+      font-size: 0.7rem;
+      color: #c4a0ad;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 520px) {
+      .stickers { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a href="https://chengrenbaike.com/" class="brand" rel="noopener">
+        <span class="dot"></span> 成人百科
+      </a>
+      <a href="https://chengrenbaike.com/manhua/" class="top-btn" rel="noopener">去漫画分类 ♪</a>
+    </header>
+
+    <section class="hero">
+      <div class="bubble">画类编号 · <span>画-03-001 ~ 006</span> · 一共 6 个小伙伴</div>
+      <h1>成人漫画品牌<br><span class="hl">收成一叠贴纸</span></h1>
+      <p>星图、墨鱼、青柠、拾页、白夜、横竖——点开小卡片就能跳到官网词条，查编号、认平台都不乱。</p>
+      <div class="pills">
+        <span class="pill pink">6 个品牌</span>
+        <span class="pill lav">漫画平台</span>
+        <span class="pill mint">可点进官网</span>
+      </div>
+    </section>
+
+    <section class="board">
+      <h2 class="board-title">贴纸墙</h2>
+      <p class="board-sub">每张贴纸对应一个品牌。轻轻点一下就好～</p>
+
+      <div class="stickers">
+        <a class="sticker" href="https://chengrenbaike.com/manhua/" rel="noopener">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="emoji">📘</span>
+          <span class="name">星图漫画</span>
+          <span class="code">画-03-001</span>
+          <span class="desc">签约作者连载 + 原创栏目，漫画平台里的「老大哥」位。</span>
+          <span class="go">去看看 →</span>
+        </a>
+
+        <a class="sticker" href="https://chengrenbaike.com/manhua/moyu-manhua/" rel="noopener">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="emoji">🦑</span>
+          <span class="name">墨鱼漫画</span>
+          <span class="code">画-03-002</span>
+          <span class="desc">名字就很可爱的一位。连载与栏目形态，方便和同类对照。</span>
+          <span class="go">去看看 →</span>
+        </a>
+
+        <a class="sticker" href="https://chengrenbaike.com/manhua/qingning/" rel="noopener">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="emoji">🍋</span>
+          <span class="name">青柠漫画</span>
+          <span class="code">画-03-003</span>
+          <span class="desc">清清爽爽的名字，漫画平台词条，入口与类型都在百科里。</span>
+          <span class="go">去看看 →</span>
+        </a>
+
+        <a class="sticker" href="https://chengrenbaike.com/manhua/shiye/" rel="noopener">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="emoji">📄</span>
+          <span class="name">拾页漫画</span>
+          <span class="code">画-03-004</span>
+          <span class="desc">一页一页拾起来的感觉。同分类里适合一起对照的品牌。</span>
+          <span class="go">去看看 →</span>
+        </a>
+
+        <a class="sticker" href="https://chengrenbaike.com/manhua/baiye/" rel="noopener">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="emoji">🌙</span>
+          <span class="name">白夜漫画</span>
+          <span class="code">画-03-005</span>
+          <span class="desc">白夜里翻漫画的感觉。画类编号里的一位常驻。</span>
+          <span class="go">去看看 →</span>
+        </a>
+
+        <a class="sticker" href="https://chengrenbaike.com/manhua/hengshu/" rel="noopener">
+          <span class="tape" aria-hidden="true"></span>
+          <span class="emoji">↕️</span>
+          <span class="name">横竖漫画</span>
+          <span class="code">画-03-006</span>
+          <span class="desc">横着竖着都能读？入口与核验记录在词条里持续更新哦。</span>
+          <span class="go">去看看 →</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="tip">
+      <p>
+        <strong>小提示：</strong>「画」是漫画平台，「漫」是动漫 / 动画那边。
+        两个分类偶尔会有交叉，迷路的时候可以两边都戳一下。
+      </p>
+      <a class="mini" href="https://chengrenbaike.com/dongman/" rel="noopener">去动漫分类看看</a>
+    </div>
+
+    <section class="cta">
+      <h2>想看完整词条和核验状态？</h2>
+      <p>这里是可爱导航页，详细资料都在成人百科官网里～</p>
+      <div class="cta-row">
+        <a class="main" href="https://chengrenbaike.com/manhua/" rel="noopener">打开漫画分类</a>
+        <a class="sub" href="https://chengrenbaike.com/" rel="noopener">回官网首页</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 成人百科 · 漫画品牌小贴纸页</div>
+      <div class="foot-links">
+        <a href="https://chengrenbaike.com/manhua/" rel="noopener">漫画</a>
+        <a href="https://chengrenbaike.com/dongman/" rel="noopener">动漫</a>
+        <a href="https://chengrenbaike.com/duanju/" rel="noopener">短剧</a>
+        <a href="https://chengrenbaike.com/pinpai/" rel="noopener">全部品牌</a>
+      </div>
+      <p class="disclaimer">本页只做品牌导航，不提供阅读或下载。面向成年用户，请遵守当地法律法规。</p>
+    </footer>
+  </div>
+</body>
+</html>
